@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pitch Modulation Player</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Audio Pitch Modulation Player</h1>
+    
+    <div class="container">
+        <div class="player-section">
+            <h2>Audio Player</h2>
+            <div class="controls">
+                <input type="file" id="audioFile" accept="audio/*">
+                <div>
+                    <button id="playBtn">Play</button>
+                    <button id="stopBtn">Stop</button>
+                </div>
+            </div>
+            <div class="status" id="status">Please load an audio file</div>
+            <div class="pitch-display">
+                Current pitch: <span id="pitchValue">1.0</span>x
+            </div>
+            <div class="visual-indicator" id="pitchIndicator"></div>
+        </div>
+        
+        <div class="visualizer-section">
+            <h2>Visualization</h2>
+            <div class="audio-visualizer">
+                <div class="sound-wave" id="soundWave"></div>
+            </div>
+            <div class="pitch-display">
+                Visual pitch: <span id="visualPitchValue">1.0</span>x
+            </div>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
